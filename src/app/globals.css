@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+:root {
+  --background: #FDFBF7;
+  --foreground: #111111;
+  --card: #F5F2EB;
+  --card-foreground: #111111;
+  --primary: #8B5A2B;
+  --primary-foreground: #FDFBF7;
+  --secondary: #EAE5D9;
+  --secondary-foreground: #3E2723;
+  --muted: #F5F2EB;
+  --muted-foreground: #706E6B;
+  --accent: #C2B280;
+  --accent-foreground: #111111;
+  --border: #EAE5D9;
+  --input: #EAE5D9;
+  --ring: #8B5A2B;
+}
+
+.dark {
+  --background: #111111;
+  --foreground: #FDFBF7;
+  --card: #1A1A1A;
+  --card-foreground: #FDFBF7;
+  --primary: #C2B280;
+  --primary-foreground: #111111;
+  --secondary: #2D2B2A;
+  --secondary-foreground: #EAE5D9;
+  --muted: #1A1A1A;
+  --muted-foreground: #A09D9A;
+  --accent: #8B5A2B;
+  --accent-foreground: #FDFBF7;
+  --border: #2D2B2A;
+  --input: #2D2B2A;
+  --ring: #C2B280;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom UI utilities */
+.font-serif-heading {
+  font-family: var(--font-serif), serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Pinterest masonry styles */
+.masonry-grid {
+  display: flex;
+  margin-left: -16px;
+  width: auto;
+}
+.masonry-column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+.masonry-item {
+  margin-bottom: 16px;
+}
