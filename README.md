@@ -36,8 +36,8 @@ npm install
 ### 2. Configure Environment Variables
 Create a `.env` file in the root folder (referenced in `.env.example`):
 ```env
-DATABASE_URL="postgresql://neondb_owner:...@ep-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&pgbouncer=true"
-NEXTAUTH_SECRET="devsecret321_deal_nova_jwt_signing_key_secret"
+DATABASE_URL="your_database_url_here"
+NEXTAUTH_SECRET="your_secret_here"
 NEXTAUTH_URL="http://localhost:3000"
 ```
 
@@ -64,8 +64,8 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 Test users are pre-configured in the database via the seed script:
 
 ### A. Admin Account
-* **Email:** `admin@dealnova.com`
-* **Password:** `adminpass`
+* **Email:** `your email`
+* **Password:** `your password`
 * **Features:** Accesses the **Admin Dashboard** (`/admin`) to run product cataloging, edit active countdown deals, draft articles, and track click logs metrics.
 
 ### B. Customer Account
